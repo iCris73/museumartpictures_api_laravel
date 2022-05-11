@@ -148,10 +148,6 @@ class ArtController extends Controller
             );
         }
         Artpictures::destroy($request->id);
-        return response()->json(
-            $this->getResultResponse(200, []),
-            200
-        );
     }
 
     protected function getResultResponse($code, $message)
